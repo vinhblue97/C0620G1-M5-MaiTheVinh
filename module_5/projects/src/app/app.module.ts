@@ -1,31 +1,24 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import {AppComponent} from './app.component';
 import {RouterModule} from '@angular/router';
 import {AppRoutingModule} from './app-routing.module';
-import {HomeComponent} from './case-study/home/home.component';
-import {M5CreateCustomerComponent} from './case-study/m5-create-customer/m5-create-customer.component';
-import {M5ListCustomerComponent} from './case-study/m5-list-customer/m5-list-customer.component';
-import {M5NavbarComponent} from './case-study/m5-navbar/m5-navbar.component';
-import {TodoComponent} from './ 6.angular_form/todo/todo.component';
-import {FormsModule} from '@angular/forms';
+import {HomeComponent} from './final-exam/component/home/home.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    M5CreateCustomerComponent,
-    M5ListCustomerComponent,
-    M5NavbarComponent,
-    TodoComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     RouterModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
